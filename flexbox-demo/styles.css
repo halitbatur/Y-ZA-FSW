@@ -1,12 +1,23 @@
 .flex-container {
   display: flex;
   margin: 25% 12.5%;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 50vh;
   border: #000 1px solid;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
 }
+
+.box:nth-child(1) {
+  flex-shrink: 1;
+}
+
+/* .box:nth-child(1) {
+  align-self: start;
+} */
+
+/* .box:nth-of-type(odd) {
+  align-self: end;
+} */
 
 .box {
   width: 100px;
@@ -19,15 +30,18 @@
   font-weight: bold;
 
   /* showing only 3 items per row */
-  /* flex: 0 0 33.3333%; */
+  /* flex: 0 0 20%; */
 }
+
+/* .box:nth-last-child(odd) {
+  align-self: center;
+} */
+
 .box1 {
   background-color: #007bff;
-  justify-self: end;
 }
 .box2 {
   background-color: #28a745;
-  align-self: end;
 }
 .box3 {
   background-color: #dc3545;
